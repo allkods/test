@@ -1,0 +1,33 @@
+.compOneContainer, .compTwoContainer,.containerThree{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+.compOneContainer>input{
+    padding: 5px;
+    text-align: center;
+}
+
+.compOneContainer>*, .compTwoContainer>*{
+    margin: 5px 0;
+}
+.compOneContainer>button, .button{
+    padding: 10px 15px;
+    background-color: blueviolet;
+    color: whitesmoke;
+    border: none;
+    box-shadow: 0 0 5px lightblue;
+}
+
+.compTwoContainer{
+    background-color: bisque;
+}
+
+.containerThree{
+    height: 100vh;
+    background-color: goldenrod;
+}

@@ -6,7 +6,7 @@ cnf();
 const MONGO_USERNAME = ""
 const MONGO_PASSWORD = "";
 const MONGO_DATABASE = "demo"
-const MONGO_STRING = "mongodb://localhost:27017"
+const MONGO_STRING = `mongodb://localhost:27017/${MONGO_DATABASE}`
 
 
 // const MYSQL_HOST = process.env.MYSQL_HOST || 'localhost';

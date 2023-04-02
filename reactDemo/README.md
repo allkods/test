@@ -1,0 +1,1 @@
+### this repository contains two folders `app` & `socketServer` . The `app` folder contains a demo ReactJS application and `socketServer` contains a server for connecting to Socket.io

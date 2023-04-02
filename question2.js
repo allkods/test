@@ -21,7 +21,7 @@ function getMaximumSequenceOfCharacers(word){
         return ob;
     }
 
-    // operation on first character of word
+    // assigning the first character of the word as previous word.
     var counter = 0;
     var prev = word[0];
     for( var i=0; i< word.length; i++ ){
@@ -45,7 +45,9 @@ function getMaximumSequenceOfCharacers(word){
         }
     }
 
-    // operation after loop
+    // Our loop is dealing with the previous character so after the loop terminates,
+    // the last character details is still unprocessed and is maintained in 'counter' and 'prev' variables
+    // so we will have to proces it.
     if(result[prev] < counter ){
         result[prev] = counter;
     }

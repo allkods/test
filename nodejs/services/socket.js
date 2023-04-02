@@ -57,11 +57,12 @@ module.exports = (server)=>{
             const room = await Room.findOneAndUpdate({
                 users: { "$in" : [socket.user.email]}},
                 {$pull:{users:socket.user.email}},
-                {new:true}
+                {new:false}
                  );
 
 
-            io.to(room.roomcode).emit("newjoiner",room.users);
+                if(room)
+                io.to(room.roomcode).emit("newjoiner",room.users);
         })
 
 

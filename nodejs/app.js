@@ -15,7 +15,7 @@ var csrf=require('csurf');
 const flash=require('connect-flash');
 
 // connecting to mongodb database
-mongoose.connect(`${config.mongo.string}/${config.mongo.database}`)
+mongoose.connect(`${config.mongo.string}`)
 .catch(err=>{
     console.log(err)
 })
