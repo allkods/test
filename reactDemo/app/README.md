@@ -1,5 +1,5 @@
 ## prerequisites
->install all the dependencies before starting using
+>install all the dependencies before starting
 
 `npm install`
 
